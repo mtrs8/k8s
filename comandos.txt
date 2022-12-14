@@ -1,0 +1,11 @@
+COMANDOS UTILIZADO PARA O DOCKER COMPOSE
+-docker compose up -d --build
+-docker compose down = parar os containers
+-docker compose logs -f
+-docker -it exec db bash
+-docker inspect -f '{{range .NetworkSettings.Networks}}.{{.IPAddress}}{{end}}' db
+
+DENTRO DO MONGO
+-mongo = para ver se está conectado
+-use admin = entra na database do admin
+-db.auth('root', passwordPrompt())
