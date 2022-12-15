@@ -1,5 +1,5 @@
 # Aplicação de cadastro de Livros
-# Apenas o BACKEND com mongo-express em diferentes containers
+# FRONTEND e BACKEND com mongo-express em diferentes containers
 
 ## Para rodar com docker compose:
 1- Tenha o docker instalado  
