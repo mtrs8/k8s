@@ -29,6 +29,16 @@ services:
     networks:
       - app-network
 
+  web:
+    build: ./react-docker
+    container_name: web
+    volumes:
+      - ./react-docker:/front-app
+    ports:
+      - 3000:3000
+    networks:
+      - app-network
+
   backend:
     depends_on:
       - db
@@ -36,7 +46,7 @@ services:
     build: ./backend
     container_name: back
     volumes:
-      - ./backend:/back
+     - ./backend:/back
     ports:
       - 3002:3002
     networks:
